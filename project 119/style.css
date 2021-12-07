@@ -1,0 +1,63 @@
+body{
+    background: linear-gradient(90deg, #00C9FF 0%, #ffffff 100%);
+    font-family: 'Indie Flower', cursive;
+    font-weight: 900;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 900;
+}
+h1{
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, #fbfbfb 0%, #3F5EFB 100%);
+    font-family: 'Fredericka the Great', cursive;
+    padding-left: 120px;
+}
+#show_sketch{
+    float: right;
+}
+p{
+    padding-top: 10px;
+    font-size: 25px;
+}
+#timer{
+    float: right;
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+#sketch_to_be_drawn{
+    font-family: 'Fredericka the Great', cursive;
+    color: rgb(0, 0, 0);
+}
+
+canvas {
+    border-radius: 15px;
+    border: 3px soild white;
+    animation-name: canvas_ani;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: 150px;
+}
+
+
+@keyframes canvas_ani {
+    0% {
+        box-shadow: 10px 10px rgb(252, 3, 3), -1em 0 .4em rgb(252, 3, 3);
+    }
+
+    25% {
+        box-shadow: 10px 10px rgb(252, 248, 3), -1em 0 .4em rgb(252, 248, 3);
+    }
+
+    50% {
+        box-shadow: 10px 10px rgb(3, 252, 11), -1em 0 .4em rgb(3, 252, 11);
+    }
+
+    75% {
+        box-shadow: 10px 10px rgb(3, 244, 252), -1em 0 .4em rgb(3, 244, 252);
+    }
+
+    100% {
+        box-shadow: 10px 10px rgb(30, 255, 0), -1em 0 .4em rgb(30, 255, 0);
+    }
+}
